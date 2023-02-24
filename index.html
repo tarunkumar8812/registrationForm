@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ragistraion-Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>REGISTRATION FORM</h2>
+        </div>
+
+        <form action="" class="form" id="form" onsubmit="return validateForm()">
+            <!-- -------------------  username  ------------------- -->
+            <div class="form-control" oninput="return validateForm()">
+                <label for="">Username</label><br>
+                <input type="text" name="" class="input" id="username" autocomplete="off"
+                    placeholder="Enter Your Fullname">
+                <img class="check" src="/images/check-mark.png" alt="" srcset="">
+                <img class="exclamation" src="/images/exclamation-mark.png" alt="" srcset="">
+                <small></small>
+            </div>
+            <!-- -------------------  email  ------------------- -->
+            <div class="form-control" oninput="return validateForm()">
+                <label for="">Email</label><br>
+                <input type="email" name="" class="input" id="email" autocomplete="off" placeholder="Enter Your Email">
+                <img class="check" src="/images/check-mark.png" alt="" srcset="">
+                <small></small>
+            </div>
+            <!-- -------------------  phone number  ------------------- -->
+            <div class="form-control" oninput="return validateForm()">
+                <label for="">Phone</label><br>
+                <input type="number" name="" class="input" id="phone" autocomplete="off"
+                    placeholder="Enter Your Phone Number">
+                <img class="check" src="/images/check-mark.png" alt="" srcset="">
+                <img class="exclamation" src="/images/exclamation-mark.png" alt="" srcset="">
+                <small></small>
+            </div>
+            <!-- -------------------  password  ------------------- -->
+            <div class="form-control" oninput="return validateForm()">
+                <label for="">Password</label><br>
+                <input type="password" name="" class="input" id="password" autocomplete="off"
+                    placeholder="Enter Your Password">
+                <img class="check" src="/images/check-mark.png" alt="" srcset="">
+                <img class="exclamation" src="/images/exclamation-mark.png" alt="" srcset="">
+                <small></small>
+            </div>
+            <!-- -------------------  confirm password  ------------------- -->
+            <div class="form-control" oninput="return validateForm()">
+                <label for="">Confirm-Password</label><br>
+                <input type="password" name="" class="input" id="cpassword" autocomplete="off"
+                    placeholder="Enter Your Password">
+                <img class="check" src="/images/check-mark.png" alt="" srcset="">
+                <img class="exclamation" src="/images/exclamation-mark.png" alt="" srcset="">
+                <small></small>
+            </div>
+
+            <!-- ---------------------  submit button  --------------------- -->
+            <input type="submit" value="submit" class="btn" name="" onclick="return validateForm()">
+
+        </form>
+
+    </div>
+
+    <script type="text/javascript" src="/index.js"></script>
+
+</body>
+
+</html>
